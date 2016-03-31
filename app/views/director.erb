@@ -1,0 +1,11 @@
+<h1>Director</h1>
+
+<div id="director">
+  <h3><%= @director.name %></h3>
+  <h4>Total Sales: <%= @director.films.total_sales %></h4>
+  <h4>Average Sales <%= @director.films.average_sales %></h4>
+  <% @director.films.each do |film| %>
+    <%= film.title %><br />
+  <% end %>
+
+</div>

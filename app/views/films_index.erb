@@ -4,5 +4,6 @@
   <% @films.each do |film| %>
     <h3><%= film.title %> (<%= film.year %>)</h3>
     <p>Gross US Box Office Sales: $<%= film.box_office_sales %></p>
+    <p><%= film.genre.name %></p>
   <% end %>
 </div>
